@@ -1,0 +1,31 @@
+.multi-select-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.multi-select-btn:hover {
+  background-color: #45a049;
+}
+
+.multi-select-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+.multi-select-btn:active {
+  background-color: #3e8e41;
+}
+
+.multi-select-btn.multi-select{
+  background-color: #ee0505;
+    box-shadow: 0 0 5px #af4c4c;
+}
