@@ -1,0 +1,18 @@
+.indicator{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding:2rem;
+}
+
+.accordianQuestion{
+    display: inline-block;
+}
+
+.accordianHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
