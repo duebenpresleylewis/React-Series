@@ -1,20 +1,23 @@
 import React from "react";
-import './Accordian.css' 
-const Accordian = (props) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+import './Accordian.css';
+
+const Accordian = ({ isOpen, onToggle, questionNumber, question, answer }) => {
   return (
     <div>
       <div className="accordianContainer">
         <div className="accordianHeader">
           <h2 className="accordianQuestion">
-            {props.questionNumber}. {props.question}
+            {questionNumber}. {question}
           </h2>
-          <span className="indicator" onClick={() => setIsOpen(!isOpen)}>
+          <span
+            className={`indicator ${isOpen ? "open" : ""}`}
+            onClick={onToggle}
+          >
             ^
           </span>
         </div>
 
-        {isOpen && <p className="answerPara">{props.answer}</p>}
+        {isOpen && <p className="answerPara">{answer}</p>}
       </div>
     </div>
   );
