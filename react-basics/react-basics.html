@@ -11,8 +11,31 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+
+      const button = <button>Click Me</button>;
+      const div = <div>
+        <h1>Welcome to SuperSimpleDev React Course</h1>
+        <p>This is a simple React app.</p>
+      </div>;
+
+      const example = <button>
+        <span>Click Me</span>
+      </button>;
+
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+      ReactDOM.createRoot(container).render(<div>
+        <h1>Welcome to SuperSimpleDev React Course</h1>
+        <p>This is a simple React app. 242 + 234 = {242 + 234}</p>
+        {button}
+      </div>);
+
+      // render(<div>
+      //   <h1>Welcome to SuperSimpleDev React Course</h1>
+      //   <p>This is a simple React app.</p>
+      //   {button}
+      // </div>);
+
+
     </script>
   </body>
 </html>
